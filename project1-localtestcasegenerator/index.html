@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local LLM Test Generator</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Input Column -->
+        <div class="panel">
+            <header>
+                <h1>Test Case Generator</h1>
+                <div id="statusBadge" class="status offline">● Checking System...</div>
+            </header>
+            
+            <textarea id="userInput" placeholder="Describe the feature you want to test...
+Example:
+A login page where users can sign in with email/password. It should handle invalid emails, wrong passwords, and lock the account after 3 failed attempts."></textarea>
+            
+            <div class="actions">
+                <button id="generateBtn" disabled>Generate Test Cases</button>
+            </div>
+        </div>
+
+        <!-- Output Column -->
+        <div class="panel">
+            <div id="outputArea">
+                <p style="color: var(--text-secondary); text-align: center; margin-top: 2rem;">
+                    Generated test cases will appear here...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logic -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

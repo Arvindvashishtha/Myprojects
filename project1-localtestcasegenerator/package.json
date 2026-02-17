@@ -1,0 +1,14 @@
+{
+  "name": "local-llm-test-generator",
+  "version": "1.0.0",
+  "description": "Local LLM Test Case Generator using Ollama",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.1" 
+  }
+}
